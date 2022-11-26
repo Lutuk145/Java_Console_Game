@@ -14,14 +14,7 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        Console console = System.console();
-        if (console == null && !GraphicsEnvironment.isHeadless()) {
-            String filename = Main.class.getProtectionDomain().getCodeSource().getLocation().toString().substring(6);
-            Runtime.getRuntime().exec(new String[]{"cmd","/c","start","cmd","/k","java -jar \"" + filename + "\""});
-        }else{
-            Main.main(new String[0]);
-            System.out.println("Program has ended, please type 'exit' to close the console");
-        }
+
         //vars for running and hp
         int enemy = 20;
         boolean resume = true;
@@ -178,6 +171,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -193,6 +189,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -208,6 +207,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -286,6 +288,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -301,6 +306,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -316,6 +324,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -394,6 +405,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -409,6 +423,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
@@ -424,6 +441,9 @@ public class Main {
                     System.out.println("f : To move forward");
                     System.out.println("l : To move left");
                     System.out.println("r : To move right");
+                    System.out.println("stop    : To stop the game");
+                    System.out.println("restart : To restart the save");
+                    System.out.println("stats   : To show your stats");
                     System.out.println(" ");
                     System.out.println(" ");
                     System.out.println(" ");
