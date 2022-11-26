@@ -5,6 +5,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.awt.*;
 import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
@@ -13,6 +14,14 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
+        Console console = System.console();
+        if (console == null && !GraphicsEnvironment.isHeadless()) {
+            String filename = Main.class.getProtectionDomain().getCodeSource().getLocation().toString().substring(6);
+            Runtime.getRuntime().exec(new String[]{"cmd","/c","start","cmd","/k","java -jar \"" + filename + "\""});
+        }else{
+            Main.main(new String[0]);
+            System.out.println("Program has ended, please type 'exit' to close the console");
+        }
         //vars for running and hp
         int enemy = 20;
         boolean resume = true;
